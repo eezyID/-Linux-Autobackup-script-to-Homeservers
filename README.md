@@ -1,4 +1,4 @@
-# [Linux] Autobackup script to Homeservers or other Harddrives
+# [Linux] Autobackup script to Homeservers or Harddrives
 
 
 1. Download the .zip file.
