@@ -1,0 +1,33 @@
+#!/bin/bash
+for (( ; ; ))
+do
+./"PASTE FILE NAME HERE" 
+echo -e "\e[1;34mNext Backup in 02h 00min 00sec!"
+sleep 1800
+echo -e "\e[1;34mNext Backup in 01h 30min 00sec!"
+sleep 1800
+echo -e "Next Backup in 1h 00min 00sec!"
+sleep 1800
+echo -e "Next Backup in 0h 30min 00sec!"
+sleep 1200
+echo -e "Next Backup in 00h 10min 00sec!"
+sleep 300
+echo -e "Next Backup in 00h 05min 00sec!"
+sleep 240
+echo -e "Next Backup in 00h 01min 00sec!"
+sleep 30
+echo -e "Next Backup in 00h 00min 30sec!"
+sleep 20
+echo -e "Next Backup in 00h 00min 10sec!"
+sleep 5
+echo -e "Next Backup in 00h 00min 05sec!"
+sleep 2
+echo -e "Next Backup in 0h 0min 03sec!"
+sleep 1
+echo -e "Next Backup in 0h 0min 02sec!"
+sleep 1
+echo -e "Next Backup in 0h 0min 01sec!"
+sleep 1
+echo -e "Next Backup in 0h 0min 00sec!"
+clear
+done

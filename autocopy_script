@@ -1,0 +1,33 @@
+#!/bin/bash
+rsync -a -progress "PASTE FULL SOURCE PATH HERE" "PASTE FULL PATH FOR BACKUP" 2>/dev/null & 
+rsync -a -progress "PASTE FULL SOURCE PATH HERE" "PASTE FULL PATH FOR BACKUP" 2>/dev/null & 
+#add as many lines as you want by copy and pasting the line above. Only make sure its above "clear"
+clear
+
+tput civis      -- invisible
+
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+printf "\e[1;31m.\rCopying: [${_fill// /#}${_empty// /-}] ${_progress}%%\e[0m"
+
+}
+
+_start=1
+
+_end=100
+
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.1
+    ProgressBar ${number} ${_end}
+done
+tput cnorm   -- normal
+printf "\e[1;32m\nFinished!\n\e[0m"
